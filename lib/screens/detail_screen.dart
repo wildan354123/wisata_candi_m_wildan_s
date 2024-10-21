@@ -66,9 +66,7 @@ class DetailScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
-                          SizedBox(
-                            height: 16,
-                          ),
+                          SizedBox(height: 16,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
