@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wisata_candi/data/candi_data.dart';
+import 'package:wisata_candi/screens/SearchScreen.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
 import 'package:wisata_candi/screens/profile_screen.dart';
 import 'package:wisata_candi/screens/sign_in.dart';
@@ -38,7 +39,8 @@ class _MyWidgetState extends State<MyWidget> {
       ),
       // home: ProfileScreen(),
       // home: DetailScreen(candi: candiList[0], ),
-      home: SignInScreen(),
+      // home: SignInScreen(),
+      home: Searchscreen(),
     );
   }
 }
