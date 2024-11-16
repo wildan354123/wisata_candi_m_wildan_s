@@ -4,14 +4,12 @@ import 'package:wisata_candi/screens/home_screen.dart';
 import 'package:wisata_candi/screens/profile_screen.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
 import 'package:wisata_candi/screens/search_screen.dart';
-import 'package:wisata_candi/screens/sign_in_screen.dart';
-import 'package:wisata_candi/screens/sing_up_screen.dart';
+import 'package:wisata_candi/screens/sign_in.dart';
+import 'package:wisata_candi/screens/sing_up.dart';
 import 'package:wisata_candi/screens/favorite_screen.dart';
 
 //Import paket-paket yang dibutuhkan
-import 'package:encrypt/encrypt.dart' as encrypt;
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:logger/logger.dart';
+
 
 // Fungsi main yang mejalankan Aplikasi
 void main() {
@@ -47,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/homescreen': (context) => const HomeScreen(),
         '/signin': (context) => SignInScreen(),
         '/signup': (context) => SignUpScreen(),
+
       },
 
       // Pertemuan 10-20
