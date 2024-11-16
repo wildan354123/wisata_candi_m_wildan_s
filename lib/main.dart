@@ -5,7 +5,7 @@ import 'package:wisata_candi/screens/profile_screen.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
 import 'package:wisata_candi/screens/search_screen.dart';
 import 'package:wisata_candi/screens/sign_in.dart';
-import 'package:wisata_candi/screens/sing_up.dart';
+import 'package:wisata_candi/screens/sign_up.dart';
 import 'package:wisata_candi/screens/favorite_screen.dart';
 
 //Import paket-paket yang dibutuhkan
@@ -85,7 +85,8 @@ class _MainScreenState extends State<MainScreen> {
       // TODO: 3. Buat properti bottomNavigationBar dengan nilai Theme
       bottomNavigationBar: Theme(
         // TODO: 4. Buat data dan Child dari Theme
-        data: Theme.of(context).copyWith(canvasColor: Colors.deepPurple[50]),
+        data: Theme.of(context).copyWith
+          (canvasColor: Colors.deepPurple[50]),
         child: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: (index) {

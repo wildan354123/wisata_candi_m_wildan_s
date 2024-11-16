@@ -9,7 +9,7 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO : 6. Implementai routing ke DetailScreen
+    // TODO : 6. Implementasi routing ke DetailScreen
     return InkWell(
       onTap: () {
         Navigator.push(
