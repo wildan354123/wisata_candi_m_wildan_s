@@ -2,6 +2,7 @@ import 'package:wisata_candi/models/candi.dart';
 
 var candiList = [
   Candi(
+    id: 'C1',
     name: 'Candi Borobudur',
     location: 'Magelang, Jawa Tengah',
     description:
@@ -18,6 +19,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C2',
     name: 'Candi Mendut',
     location: 'Magelang, Jawa Tengah',
     description:
@@ -34,6 +36,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C3',
     name: 'Candi Prambanan',
     location: 'Daerah Istimewa Yogyakarta',
     description:
@@ -50,6 +53,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C4',
     name: 'Candi Lumbung',
     location: 'Klaten, Jawa Tengah',
     description:
@@ -66,6 +70,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C5',
     name: 'Candi Sewu',
     location: 'Klaten, Jawa Tengah',
     description:
@@ -82,6 +87,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C6',
     name: 'Candi Kalasan',
     location: 'Daerah Istimewa Yogyakarta',
     description:
@@ -98,6 +104,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C7',
     name: 'Candi Sari',
     location: 'Daerah Istimewa Yogyakarta',
     description:
@@ -114,6 +121,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C8',
     name: 'Candi Plaosan',
     location: 'Klaten, Jawa Tengah',
     description:
@@ -130,6 +138,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C9',
     name: 'Candi Singosari',
     location: 'Malang, Jawa Timur',
     description:
@@ -146,6 +155,7 @@ var candiList = [
     isFavorite: false,
   ),
   Candi(
+    id: 'C10',
     name: 'Candi Jago',
     location: 'Malang, Jawa Timur',
     description:

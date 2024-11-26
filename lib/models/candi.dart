@@ -1,4 +1,5 @@
 class Candi {
+  final String id;
   final String name;
   final String location;
   final String description;
@@ -9,6 +10,7 @@ class Candi {
   bool isFavorite;
 
   Candi({
+    required this.id,
     required this.name,
     required this.location,
     required this.description,
