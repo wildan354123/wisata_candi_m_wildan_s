@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wisata_candi/provider/favorites_provider.dart';
-import 'package:wisata_candi/provider/signin_provider.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
-import 'package:wisata_candi/screens/sign_in.dart';
 
 class FavoriteScreen extends StatefulWidget {
   const FavoriteScreen({super.key});
@@ -15,31 +13,9 @@ class FavoriteScreen extends StatefulWidget {
 class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   Widget build(BuildContext context) {
-    final signInProvider = Provider.of<SignInProvider>(context);
     final favoritesProvider = Provider.of<FavoritesProvider>(context);
     final favorites = favoritesProvider.favorites;
 
-    // Jika belum login, arahkan ke halaman login
-    if (!signInProvider.isLoggedIn) {
-      return Scaffold(
-        appBar: AppBar(
-          title: const Text('Login Diperlukan'),
-        ),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const SignInScreen()),
-              );
-            },
-            child: const Text('Sign in untuk mengakses Favorit'),
-          ),
-        ),
-      );
-    }
-
-    // Halaman Favorite jika sudah sign in
     return Scaffold(
       appBar: AppBar(
         title: const Text('Favorites'),
@@ -52,7 +28,6 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
           final candi = favorites[index];
           return InkWell(
             onTap: () {
-              // Navigasi ke DetailScreen ketika item ditekan
               Navigator.push(
                 context,
                 MaterialPageRoute(
